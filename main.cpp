@@ -2,13 +2,14 @@
 #include <ctime>
 
 int foo(int n) {
+  // Some algorithm
   return n * 2;
 }
 
 int main() {
   std::clock_t start, end;
   int size = 100000;
-  double j;
+  long j;
   std::cout << "Start loop with function calls"<< std::endl;
   start = std::clock();
   for (size_t i=0; i < size; ++i)
@@ -25,6 +26,7 @@ int main() {
 
   start = std::clock();
   for (size_t i=0; i < size; ++i) {
+    // Some algorithm
     j = i * 3;
   }
   end = std::clock();
